@@ -3,7 +3,7 @@ public:
     int maxProfit(vector<int>& prices) {
         int buy=prices[0];
         int best=0;
-        for(int i=0;i<prices.size();i++){
+        for(int i=1;i<prices.size();i++){
             if(buy>prices[i]){
                 buy=prices[i];
             }
