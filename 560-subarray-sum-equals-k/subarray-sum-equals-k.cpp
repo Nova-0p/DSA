@@ -14,9 +14,9 @@ public:
 
             count+=mp[rem];
 
-            if(mp.find(rem)!=mp.end()){
+           
                 mp[sum]++;
-            }
+            
         }
         return count;
 
