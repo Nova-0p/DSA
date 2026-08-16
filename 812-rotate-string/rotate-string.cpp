@@ -6,6 +6,7 @@ public:
         
         // Concatenate s with itself and check if goal exists in it
         string doubledS = s + s;
-        return doubledS.find(goal) != string::npos;
+        return doubledS.find(goal)!=string::npos;
+        
     }
 };
