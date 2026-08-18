@@ -27,7 +27,7 @@ public:
             x=1/x;
             nn=-nn;
         }
-        /*
+        
         while(nn>0){
             //odd
             if(nn%2!=0){
@@ -40,8 +40,8 @@ public:
                 x=x*x;
                 nn=nn/2;
             }
-        }*/
+        }
         
-        return helper(x,nn,ans);
+        return ans;
     }
 };
