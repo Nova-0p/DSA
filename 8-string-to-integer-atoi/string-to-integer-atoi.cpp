@@ -1,7 +1,7 @@
 class Solution {
 public:
 
-    int helper(int n,string s,int i,long long ans,int sign){
+    int helper(int n,string &s,int i,long long ans,int sign){
         if(i==n || s[i] < '0' || s[i] > '9'){
             //base case
             return sign*ans;
