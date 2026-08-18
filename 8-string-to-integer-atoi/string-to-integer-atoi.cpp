@@ -4,7 +4,7 @@ public:
     long long helper(int n,string s,int i,long long ans,int sign){
         if(i==n || s[i] < '0' || s[i] > '9'){
             //base case
-            return ans;
+            return sign*ans;
         }
 
         int digit=s[i]-'0';
@@ -49,7 +49,7 @@ public:
 
   
  
- return ans*sign;
+ return ans;
 
 
     }
