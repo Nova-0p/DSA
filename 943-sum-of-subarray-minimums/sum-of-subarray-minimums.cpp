@@ -57,7 +57,7 @@ public:
 
             long long subarrays = left * right;
 
-            long long contribution = subarrays * arr[i];
+            long long contribution = (subarrays * arr[i]) % MOD;
 
             ans = (ans + contribution) % MOD;
         }
