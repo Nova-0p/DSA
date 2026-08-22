@@ -2,7 +2,6 @@ class Solution {
 public:
     long long subArrayRanges(vector<int>& nums) {
         int n = nums.size();
-
         vector<int> pse(n);
         vector<int> nse(n);
         vector<int> nge(n);
