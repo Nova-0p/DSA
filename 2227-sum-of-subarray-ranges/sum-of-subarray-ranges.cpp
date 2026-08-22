@@ -101,8 +101,8 @@ public:
             long long leftMax = i - pge[i];
             long long rightMax = nge[i] - i;
 
-            minSum += 1LL * nums[i] * leftMin * rightMin;
-            maxSum += 1LL * nums[i] * leftMax * rightMax;
+            minSum += nums[i] * leftMin * rightMin;
+            maxSum += nums[i] * leftMax * rightMax;
         }
 
         return maxSum - minSum;
