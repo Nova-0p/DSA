@@ -44,12 +44,10 @@ public:
         }   
 
         int maxi = 0;
-
     for (int i = 0; i < n; i++) {
         int area = heights[i] * width[i];
         maxi = max(maxi, area);
     }
-
 return maxi;
 
         
