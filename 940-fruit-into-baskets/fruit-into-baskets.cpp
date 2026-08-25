@@ -16,12 +16,16 @@ public:
                 }
             left++;
         }
-        int curr=0;
+        /*
         for(auto a:mpp){
             curr+=a.second;
         }
         maxi=max(maxi,curr);
-        }
+        */
+        maxi=max(maxi,right-left+1);
+        } 
+
+
         return maxi;
         
     }
