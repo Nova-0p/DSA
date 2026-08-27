@@ -1,0 +1,17 @@
+class Solution {
+public:
+    bool canJump(vector<int>& nums) {
+        int n=nums.size()-1;
+        int maxi=0;
+        for(int i=0;i<nums.size()-1;i++){
+            if(i>maxi){
+                return false;
+            }
+            maxi=max(maxi,nums[i]+i);
+        }
+        if(maxi>=n){
+            return true;
+        }
+        return false;
+    }
+};
