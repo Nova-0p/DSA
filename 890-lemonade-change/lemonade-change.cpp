@@ -17,7 +17,7 @@ public:
                 if(ten>=1 && five>=1){
                     ten--;
                     five--;
-                }else if(ten<1 && five>=3){
+                }else if(five>=3){
                     five-=3;
                 }else{
                     return false;
