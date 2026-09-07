@@ -9,10 +9,11 @@ public:
         hash[t[i]-'a']++;
       }
       for(int j=0;j<s.size();j++){
-        if(hash[s[j]-'a']==0){
+        hash[s[j]-'a']--;
+        if(hash[s[j]-'a']<0){
             return false;
         }
-        hash[s[j]-'a']--;
+        
       }
 return true;
     }
